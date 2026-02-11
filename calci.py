@@ -1,16 +1,14 @@
+import sys
 
+if len(sys.argv) != 4:
+    print("Usage: python calci.py <choice> <num1> <num2>")
+    sys.exit()
+
+choice = sys.argv[1]
+num1 = float(sys.argv[2])
+num2 = float(sys.argv[3])
 
 print("Simple Calculator")
-print("Choose an operation:")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
-
-choice = input("Enter choice (1/2/3/4): ")
-
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
 
 if choice == '1':
     print("Result:", num1 + num2)
