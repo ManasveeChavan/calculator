@@ -24,8 +24,27 @@ public class Calci {
             case 1:
                 System.out.println("Result: " + (num1 + num2));
                 break;
+
             case 2:
                 System.out.println("Result: " + (num1 - num2));
                 break;
+
             case 3:
-                System.out.println("Result: " +
+                System.out.println("Result: " + (num1 * num2));
+                break;
+
+            case 4:
+                if (num2 != 0) {
+                    System.out.println("Result: " + (num1 / num2));
+                } else {
+                    System.out.println("Error! Division by zero is not allowed.");
+                }
+                break;
+
+            default:
+                System.out.println("Invalid choice!");
+        }
+
+        sc.close();
+    }
+}
